@@ -1,0 +1,74 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+.upload-section, .result-section, .score-section, .suggestions-section, .skill-matcher, .visual-summary, .job-listings, .professional-summary {
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+input[type="file"], select {
+    padding: 10px;
+    font-size: 1em;
+    margin: 10px 0;
+    width: calc(100% - 20px);
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.result-container, .score-container, .suggestions-container, .skill-matcher, .visual-summary, .job-listings, .professional-summary {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.loading-message {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+canvas {
+    margin-top: 20px;
+}
+
+

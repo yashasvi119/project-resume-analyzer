@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Powered Resume Analyzer</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- For Chart.js -->
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>AI-Powered Resume Analyzer</h1>
+            <p>Elevate your job applications with insightful analysis!</p>
+        </header>
+
+        <main>
+            <section class="upload-section">
+                <h2>Upload Your Resume</h2>
+                <input type="file" id="resumeInput" accept=".pdf, .doc, .docx">
+                <label for="roleSelect">Select Job Role:</label>
+                <select id="roleSelect">
+                    <option value="">-- Select Role --</option>
+                    <option value="Software Developer">Software Developer</option>
+                    <option value="Data Scientist">Data Scientist</option>
+                    <option value="Project Manager">Project Manager</option>
+                    <option value="Web Designer">Web Designer</option>
+                </select>
+                <button id="analyzeButton">Analyze Resume</button>
+            </section>
+
+            <section class="result-section">
+                <h2>Analysis Results</h2>
+                <div id="resultContainer" class="result-container">
+                    <p id="loadingMessage" class="loading-message">Upload a resume to see the analysis!</p>
+                </div>
+            </section>
+
+            <section class="score-section">
+                <h2>Resume Score</h2>
+                <div id="scoreContainer" class="score-container">
+                    <p id="resumeScore">Score: <span>0</span> out of 100</p>
+                    <p id="jobChance">Job Chance: <span>0%</span></p>
+                    <p id="scoreExplanation"></p>
+                </div>
+            </section>
+
+            <section class="suggestions-section">
+                <h2>Tailored Suggestions</h2>
+                <div id="suggestionsContainer" class="suggestions-container">
+                    <p id="suggestions"></p>
+                </div>
+            </section>
+
+            <!-- New Section for Skill Matching -->
+            <section class="skill-matcher">
+                <h2>Skill Matcher</h2>
+                <p id="skillMatchResults"></p>
+            </section>
+
+            <!-- New Section for Visual Resume Summary -->
+            <section class="visual-summary">
+                <h2>Visual Resume Summary</h2>
+                <canvas id="skillChart" width="400" height="200"></canvas>
+            </section>
+
+            <!-- New Section for Job Listings -->
+            <section class="job-listings">
+                <h2>Job Listings</h2>
+                <div id="jobListings"></div>
+            </section>
+
+            <!-- New Section for Professional Summary -->
+            <section class="professional-summary">
+                <h2>Professional Summary</h2>
+                <p id="professionalSummary"></p>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 AI-Powered Resume Analyzer. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
